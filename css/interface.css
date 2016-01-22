@@ -1,0 +1,25 @@
+*{box-sizing:border-box;}
+html, body{margin:0;padding:0;height:100vh;overflow:hidden;}
+
+/*section.page.over{position:absolute;top:0;left:-100%;width:100%;}*/
+section.page{margin:0;padding:0;height:100vh;overflow:auto;background-color:#fff;width:100%;}
+section.page header{margin:0;padding:0;background-color:#005AAB;display: -webkit-flex;display: flex;}
+section.page header h1{margin:0;padding:10px;color:#fff;font:bold 1em Tahoma;text-align:center;-webkit-flex: 1;-ms-flex: 1;flex: 1;}
+section.page header button{margin:0;padding:10px 15px;background-color:#6089C1;border:none;}
+section.page article{margin:0;padding:0;}
+section.page article div.table-responsive{width:100%;overflow-x:auto;}
+
+section#login header{margin:0;padding:0;height:70vh;background-color:#005AAB;text-align:center;display:block;}
+section#login header img{margin:0;padding:0;width:200px;}
+section#login article {margin:0;padding:0;height:30vh;}
+section#login article .form{margin: -100px 30px 0 30px;background-color:#fff;}
+section#login article .form label{margin:0;padding:0;display: -webkit-flex;display: flex;background-color:#fff;border-bottom: solid 1px #999;}
+section#login article .form label span{margin:0;padding:10px;width:40px;text-align:center;}
+section#login article .form label input{-webkit-flex: 1;-ms-flex: 1;flex: 1;border:none;}
+section#login article .form label button{margin:0;padding:10px;width:100%;background-color:#6089C1;border:none;}
+
+section#summary article .main-menu{margin:0;padding:0;list-style:none;}
+section#summary article .main-menu li{margin:0;padding:0;border-bottom:dotted 1px #999;display: -webkit-flex;display: flex;}
+section#summary article .main-menu li p{margin:0;padding:10px 5px;-webkit-flex: 1;-ms-flex: 1;flex: 1;}
+section#summary article .main-menu li span{margin:0;padding:10px 5px;width:50px;text-align:right;background-color:#e1e1e1;}
+section#summary article .main-menu li.active span{background-color:#6089C1;color:#fff;}

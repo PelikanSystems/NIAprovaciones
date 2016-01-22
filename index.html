@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>App - Aprobación de Documentos</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/interface.css" rel="stylesheet">
+        <link href="css/transitions.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="page" id="login">
+            <header>
+                <img src="img/logo.png">
+            </header>
+            <article>
+                <div class="form">
+                    <label><span><i class="fa fa-user"></i></span><input type="text" id="user" placeholder="Usuario" required></label>
+                    <label><span><i class="fa fa-unlock-alt"></i></span><input type="password" id="pass" placeholder="Contraseña" required></label>
+                    <label><button type="submit" id="sendLogin">Entrar</button></label>
+                </div>
+            </article>
+        </section>
+        <section class="page" id="summary">
+            <header>
+                <h1>Aprobaciones</h1>
+            </header>
+            <article>
+                <ul class="main-menu">
+                    <li class="active" rel="#ordenesCompra"><p>Órdenes de Compra</p><span>0</span></li>
+                    <li rel="#pedidosClientes"><p>Pedidos de Clientes</p><span>0</span></li>
+                    <li class="active" rel="#documentosContables"><p>Documentos Contables</p><span>0</span></li>
+                    <li rel="#requisiciones"><p>Requisiciones</p><span>0</span></li>
+                    <li rel="#conteosCiclicos"><p>Conteos Cíclicos</p><span>0</span></li>
+                    <li rel="#ajustesInventario"><p>Ajustes de Inventario</p><span>0</span></li>
+                    <li rel="#pedidosG"><p>Pedidos G</p><span>0</span></li>
+                    <li rel="#devolucionesCorrecciones"><p>Devoluciones y Correcciones</p><span>0</span></li>
+                    <li rel="#plazoFacturas"><p>Plazo Facturas</p><span>0</span></li>
+                    <li rel="#reclamos"><p>Reclamos</p><span>0</span></li>
+                </ul>
+            </article>
+        </section>
+        <section class="page over" id="ordenesCompra">
+            <header>
+                <button rel="#ordenesCompra"><i class="fa fa-arrow-left"></i></button>
+                <h1>Órdenes de Compra</h1>
+            </header>
+            <article>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Orden de Compra</th>
+                                <th>Proveedor</th>
+                                <th>Nombre del Proveedor</th>
+                                <th>Tipo de Proveedor</th>
+                                <th>Importe</th>
+                                <th>Comprador</th>
+                                <th>Fase</th>
+                                <th>Aprobar</th>
+                                <th>Rechazar</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </article>
+        </section>
+        
+        <script src="phonegap.js"></script>
+        <script src="js/actions.js"></script>
+    </body>
+</html>

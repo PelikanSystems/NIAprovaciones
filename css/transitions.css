@@ -1,0 +1,8 @@
+.page.leave{animation: pageLeave 300ms linear;margin-top:-100vh;}
+.page.enter{animation: pageEnter 300ms linear;position:absolute;top:0;left:0;}
+.page.back{animation: pageBack 300ms linear;position:absolute;top:0;left:-100%;}
+
+
+@keyframes pageLeave {from {margin-top:0;}to {margin-top:-100vh;}}
+@keyframes pageEnter {from {left:-100%;}to {left:0%;}}
+@keyframes pageBack {from {left:0%;}to {left:-100%;}}
